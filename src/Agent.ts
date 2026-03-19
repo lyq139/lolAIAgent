@@ -61,7 +61,6 @@ export default class Agent {
                 response = await this.llm.chat();
                 continue;
             }
-            await this.close();
             return response.content;
         }
     }
